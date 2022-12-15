@@ -6,7 +6,7 @@ private int columns;
 private Piece[][] pieces;
 
 public Board(int rows, int columns) {
-	if(rows < 8 || columns < 8) {
+	if(rows < 8 || columns < 8) {  // Update value.
 		throw new BoardException("Error creating board: there must be at least 8 rows and 8 columns!");
 	}
 	this.rows = rows;
