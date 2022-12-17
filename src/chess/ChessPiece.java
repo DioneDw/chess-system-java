@@ -12,6 +12,9 @@ public ChessPiece(Board board, Color color) {
 	this.color = color;
 }
 
+public ChessPosition getChessPosition() {
+	return ChessPosition.fromPosition(position);
+}
 public Color getColor() {
 	return color;
 }
@@ -20,6 +23,7 @@ protected boolean isThereOpponentPiece(Position position) {
 	ChessPiece p = (ChessPiece) getBoard().piece(position);
 	return p!=null && p.getColor()!= color;
 }
+
 
 
 }
