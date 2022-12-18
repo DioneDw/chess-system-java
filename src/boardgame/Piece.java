@@ -2,7 +2,7 @@ package boardgame;
 
 public abstract class Piece {
 	protected Position position;
-	
+	public int x;
 	private Board board;
 	
 	public Piece(Board board) {
